@@ -1,0 +1,22 @@
+.head {
+  background-color: #1c2b35;
+}
+.nav-container {
+  height: 80px;
+  background-color: #1c2b35;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 140px;
+}
+.iteam-link a {
+  text-decoration: none;
+  letter-spacing: 0.5%;
+  font-size: 17px;
+  color: azure;
+  margin-right: 30px;
+}
+.iteam-link a:hover {
+  color: orangered;
+  transition: 0.5s;
+}
