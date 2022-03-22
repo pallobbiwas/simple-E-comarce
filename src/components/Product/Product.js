@@ -1,7 +1,7 @@
 import React from "react";
 import("./Product.css");
 
-const Product = ({ product }) => {
+const Product = ({ product, addToCart }) => {
   const { name, img, seller, ratings, price } = product;
   return (
     <div className="product-container">
@@ -15,7 +15,7 @@ const Product = ({ product }) => {
           <p>saller: {seller}</p>
         </div>
       </div>
-      <button className="footer w-75 my-4 py-2">Add to cart</button>
+      <button onClick={() => addToCart(product)} className="footer w-75 my-4 py-2">Add to cart</button>
     </div>
   );
 };
