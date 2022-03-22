@@ -5,7 +5,7 @@ import("./Header.css");
 const Header = () => {
   return (
     <nav className="head">
-      <div className="container nav-container">
+      <div className="nav-container container">
         <img src={logo} alt="" />
         <div className="iteam-link">
             <a href="/order">Order</a>
