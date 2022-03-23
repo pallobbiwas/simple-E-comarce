@@ -30,7 +30,7 @@ const Products = () => {
         </div>
       </div>
       <div className="order-container col-md-2">
-        <Cart></Cart>
+        <Cart order={order}></Cart>
       </div>
     </div>
   );
