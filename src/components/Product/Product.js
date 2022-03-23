@@ -5,7 +5,7 @@ const Product = ({ product, addToCart }) => {
   const { name, img, seller, ratings, price } = product;
 
   return (
-    <div className="product-container"  data-aos="fade-down"
+    <div className="product-container"  data-aos="fade-left"
     data-aos-easing="linear"
     data-aos-duration="1500">
       <div className="mx-3">
