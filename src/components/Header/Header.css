@@ -1,32 +1,5 @@
-.head {
-  background-color: #1c2b35;
-}
-.nav-container {
-  height: 80px;
-  background-color: #1c2b35;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 140px;
-}
-
-.iteam-link a {
+a {
   text-decoration: none;
-  position: relative;
   color: white;
-  padding: 0 10px;
-  letter-spacing: 0.5px;
-}
-.iteam-link a:after {
-  content: "";
-  position: absolute;
-  background-color: rgb(236, 41, 6);
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: -10px;
-  transition: 0.6s;
-}
-.iteam-link a:hover:after {
-  width: 100%;
+  margin: 0 10px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 
 const Cart = (props) => {
@@ -13,13 +13,22 @@ const Cart = (props) => {
   const Tax = price * 0.1;
   const total = price + Tax;
 
+  const navigate = useNavigate()
+
+  const payment = () => {
+    navigate('/payment')
+  }
+
   return (
     <div className="cart">
+      <div>
       <h5>Order Summary</h5>
       <p>Total oreder: {quantity}</p>
       <p>Price:{price}</p>
       <p>Tax: {Tax.toFixed(2)}</p>
       <p>Total: {total}</p>
+      </div>
+      <button onClick={payment} className="btn btn-success">Proceed to pay</button>
     </div>
   );
 };
